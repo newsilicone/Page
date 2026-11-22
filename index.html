@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es-PE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="NEW SILICONE. Silicona blanca RTV-2 para fabricar moldes. Consulta por la presentación de 25 kg.">
+  <meta name="theme-color" content="#102747">
+  <title>NEW SILICONE | Silicona blanca RTV-2 para moldes</title>
+  <link rel="icon" href="assets/logo.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#contenido">Ir al contenido</a>
+<header class="header">
+  <div class="wrap bar">
+    <a class="brand" href="#inicio"><img src="assets/logo.webp" alt="" width="38" height="40">NEW SILICONE</a>
+    <nav aria-label="Principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#nosotros">Nosotros</a>
+      <a href="#productos">Productos</a>
+      <a href="#contactenos">Contáctenos</a>
+    </nav>
+    <a class="button nav-cta" href="#contactenos">Cotizar <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+<main id="contenido">
+  <section id="inicio" class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="kicker">SILICONA PARA MOLDES</p>
+        <h1>Reproduce cada <em>detalle.</em></h1>
+        <p class="lead">Silicona blanca RTV-2 para fabricar moldes y reproducir piezas de yeso decorativo, cerámica en frío y prototipos de suelas.</p>
+        <div class="actions">
+          <a href="#productos" class="button">Ver producto <span aria-hidden="true">↘</span></a>
+          <a href="#contactenos" class="text-link">Solicitar cotización <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <figure class="hero-image">
+        <img src="assets/molde-yeso.webp" alt="Molde blanco de silicona junto a una figura de ángel reproducida en yeso" width="897" height="770" fetchpriority="high">
+        <figcaption>Molde de silicona y pieza de yeso</figcaption>
+      </figure>
+    </div>
+  </section>
+  <section id="nosotros" class="section">
+    <div class="wrap about">
+      <div><p class="kicker">NOSOTROS</p><h2>Especialistas en silicona para moldes</h2></div>
+      <div><p>NEW SILICONE es una marca del grupo FUSER SAC dedicada a la venta de silicona blanca RTV-2. Atendemos a emprendedores, talleres y empresas que fabrican sus propios moldes.</p>
+      <p>Cuéntanos qué pieza quieres reproducir y qué cantidad necesitas para preparar tu cotización.</p></div>
+    </div>
+  </section>
+  <section id="productos" class="section products">
+    <div class="wrap">
+      <p class="kicker">PRODUCTOS</p>
+      <h2>Silicona blanca RTV-2</h2>
+      <div class="product">
+        <div class="spec">
+          <dl>
+            <div><dt>Presentación</dt><dd>25 kg</dd></div>
+            <div><dt>Color</dt><dd>Blanco</dd></div>
+            <div><dt>Tipo</dt><dd>Dos componentes</dd></div>
+          </dl>
+          <a href="#contactenos" class="button">Cotizar este producto <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="applications">
+          <h3>Aplicaciones</h3>
+          <details open><summary>Yeso decorativo</summary><p>Para crear moldes de figuras, adornos y recuerdos en yeso.</p></details>
+          <details><summary>Cerámica en frío</summary><p>Para reproducir motivos decorativos y piezas artesanales.</p></details>
+          <details><summary>Calzado</summary><p>Para fabricar moldes de prototipos y muestras de suelas.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contactenos" class="section contact">
+    <div class="wrap contact-grid">
+      <div><p class="kicker">CONTÁCTENOS</p><h2>Cotiza para tu próximo proyecto</h2>
+      <p>Prepara tu solicitud y compártela con NEW SILICONE. Si tienes una foto de la pieza, adjúntala al escribirnos.</p>
+      <a class="text-link" href="https://www.tiktok.com/@new.silicone" target="_blank" rel="noopener noreferrer">NEW SILICONE en TikTok <span aria-hidden="true">↗</span></a></div>
+      <form id="quote" hidden>
+        <label for="customer">Nombre o empresa</label>
+        <input required id="customer" name="customer" autocomplete="organization" maxlength="100">
+        <label for="quantity">Cantidad que necesitas (kg)</label>
+        <input required id="quantity" name="quantity" type="number" min="0.1" step="any" inputmode="decimal">
+        <label for="application">¿Qué pieza quieres reproducir?</label>
+        <textarea required id="application" name="application" rows="3" maxlength="600"></textarea>
+        <button class="button" type="submit">Preparar solicitud</button>
+        <div id="result" hidden>
+          <label for="message">Mensaje para compartir</label>
+          <textarea id="message" rows="5" readonly></textarea>
+          <button class="button secondary" id="copy" type="button">Copiar mensaje</button>
+          <p id="status" role="status"></p>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap footer"><strong>NEW SILICONE</strong><span>Una marca del grupo FUSER SAC</span><a href="#inicio">Volver arriba ↑</a></div></footer>
+</body>
+</html>
