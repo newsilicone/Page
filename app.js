@@ -9,17 +9,19 @@ form.addEventListener('submit', (event) => {
 
   const fields = new FormData(form);
   const name = fields.get('customer').trim();
+  const mobile = fields.get('mobile').trim();
   const application = fields.get('application').trim();
   const quantity = fields.get('quantity');
 
   message.value = [
     'Hola, NEW SILICONE. Quisiera cotizar silicona blanca RTV-2.',
     'Nombre o empresa: ' + name,
+    'Número de celular: ' + mobile,
     'Cantidad requerida: ' + quantity + ' kg',
     'Pieza o aplicación: ' + application,
     '¿Podrían indicarme precio y disponibilidad?'
   ].join('\n');
-  status.textContent = '';
+  status.textContent = 'Copia el mensaje y pégalo en Messenger.';
   result.hidden = false;
   message.focus();
 });
@@ -32,7 +34,7 @@ form.addEventListener('input', () => {
 document.querySelector('#copy').addEventListener('click', async () => {
   try {
     await navigator.clipboard.writeText(message.value);
-    status.textContent = 'Mensaje copiado. Pégalo en el chat al contactarnos.';
+    status.textContent = 'Mensaje copiado. Abre el chat y pégalo en Messenger.';
   } catch {
     message.focus();
     message.select();
